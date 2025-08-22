@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #1b3a4b; /* azul oscuro */
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ---------------------------
+   Navbar
+--------------------------- */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #d1e7dd; /* verde suave */
+}
+
+.navbar .nav-link {
+    color: #1b3a4b !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #0f5132 !important; /* verde oscuro al pasar el ratón */
+}
+
+.navbar-brand {
+    color: #0f5132 !important;
+}
+
+/* ---------------------------
+   Hero / Landing
+--------------------------- */
+.text-center h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-center .lead {
+    font-size: 1.2rem;
+    color: #0f5132;
+}
+
+/* Botones principales */
+.btn-success, .btn-primary {
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #0f5132;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+    background-color: #0f5132;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ---------------------------
+   Cards / Secciones
+--------------------------- */
+.row > .col-md-4 {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.row > .col-md-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+/* ---------------------------
+   Formulario
+--------------------------- */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+input.form-control, textarea.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border-color: #0f5132;
+    box-shadow: 0 0 5px rgba(15,81,50,0.3);
+}
+
+/* ---------------------------
+   Footer
+--------------------------- */
+footer {
+    background-color: #0f5132;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------
+   Responsivo
+--------------------------- */
+@media (max-width: 768px) {
+    .text-center h1 {
+        font-size: 2rem;
+    }
+}

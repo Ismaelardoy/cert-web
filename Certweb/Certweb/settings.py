@@ -126,7 +126,26 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # Por defecto, consola
+
+EMAIL_HOST = 'smtp.gmail.com'               # servidor SMTP Gmail
+EMAIL_PORT = 587                             # puerto TLS
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'i.ardoy.garcia@gmail.com'     # tu correo real
+#EMAIL_HOST_PASSWORD = 'contraseña_de_app'   # contraseña de aplicación si usas 2FA
+
+# From default para todos los emails
+DEFAULT_FROM_EMAIL = 'Certificados Energéticos <i.ardoy.garcia@gmail.com>'
+
+# Para producción, cambia el backend al SMTP real
+if not DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
