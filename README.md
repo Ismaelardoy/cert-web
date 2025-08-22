@@ -53,16 +53,16 @@ Certweb/
 ## 📸 Screenshots
 
 ### Home
-![Home](docs/images/home.png)
+![Home](Certweb/docs/images/home.png)
 
 ### Services
-![Services](docs/images/services.png)
+![Services](Certweb/docs/images/services.png)
 
 ### Contact Form
-![Contact](docs/images/contact.png)
+![Contact](Certweb/docs/images/contact.png)
 
 ### Thank You Page
-![Thanks](docs/images/thanks.png)
+![Thanks](Certweb/docs/images/thanks.png)
 
 ---
 
