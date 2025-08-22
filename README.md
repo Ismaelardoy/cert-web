@@ -68,6 +68,21 @@ Certweb/
 
 ## ⚙️ Installation
 
-1. Clone the repository:
+Follow these steps to get the project running locally:
 
-```bash
+1️⃣ **Clone the repository**: `git clone https://github.com/Ismaelardoy/cert-web.git` and enter the project folder: `cd cert-web`.  
+2️⃣ **Install dependencies**: `pipenv install`.  
+3️⃣ **Activate the virtual environment**: `pipenv shell`.  
+4️⃣ **Configure the database** in `settings.py` (MySQL by default, or SQLite for testing).  
+5️⃣ **Set up email credentials**: create a `.env` file in the project root with the following:
+
+EMAIL_HOST=smtp.gmail.com  
+EMAIL_PORT=587  
+EMAIL_USE_TLS=True  
+EMAIL_HOST_USER=your_email@gmail.com  
+EMAIL_HOST_PASSWORD=your_app_password  
+DEFAULT_FROM_EMAIL="Certificados Energéticos <your_email@gmail.com>"
+
+6️⃣ **Run migrations**: `python manage.py migrate`.  
+7️⃣ **Start the development server**: `python manage.py runserver`.  
+8️⃣ **Open the app** in your browser at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
