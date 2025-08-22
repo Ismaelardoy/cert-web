@@ -2,6 +2,15 @@
 
 ![Banner](docs/images/banner.png) <!-- Replace with your own screenshot -->
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Django-5.2-darkgreen?logo=django&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-8.0-orange?logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white" />
+</p>
+
 **Certweb** is a web application built with **Django** that allows users to request **energy certificates** quickly and professionally.  
 The project showcases my skills as a **Mechanical Engineer** and full-stack developer with **Python/Django**, including responsive frontend design and a working contact form with email integration.
 
