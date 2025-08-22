@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'CertwebAPP',
+    'ContactAPP',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'Certweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,8 +77,15 @@ WSGI_APPLICATION = 'Certweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',   # motor MySQL
+        'NAME': 'certweb_db',                   # nombre de tu base de datos
+        'USER': 'admindjango',             # usuario MySQL
+        'PASSWORD': 'employee@123!',        # contraseña MySQL
+        'HOST': 'localhost',                    # servidor (localhost si está en tu PC)
+        'PORT': '3306',                         # puerto por defecto MySQL
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 

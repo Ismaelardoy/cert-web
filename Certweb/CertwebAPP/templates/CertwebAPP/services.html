@@ -1,0 +1,16 @@
+{% extends 'CertwebAPP/base.html' %}
+{% block title %}Servicios{% endblock %}
+{% block content %}
+<h1>Servicios</h1>
+<p>El certificado energético es obligatorio para vender o alquilar un inmueble. Te ofrezco un servicio integral:</p>
+
+<ul>
+  <li>Visita técnica al inmueble.</li>
+  <li>Estudio detallado con software oficial.</li>
+  <li>Entrega del certificado registrado en el organismo competente.</li>
+</ul>
+
+<p class="mt-4">Precio orientativo desde <strong>80€</strong> según el tipo de vivienda.</p>
+
+<a href="{% url 'contacto' %}" class="btn btn-primary">Pide tu certificado</a>
+{% endblock %}
