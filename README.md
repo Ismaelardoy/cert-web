@@ -1,6 +1,6 @@
 # 🌿 Certweb – Energy Certificate Platform
 
-![Banner](docs/images/banner.png) <!-- Replace with your own screenshot -->
+![Banner](Certweb/docs/images/banner.png) <!-- Replace with your own screenshot -->
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white" />
